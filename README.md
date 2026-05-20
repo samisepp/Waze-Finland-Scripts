@@ -54,6 +54,15 @@ Tuo Maanmittauslaitoksen INSPIRE WMS-karttatasot WME:hen. Hakee automaattisesti 
 
 ---
 
+### WME Koulualueet
+**Versio:** 0.3.5 | **Tekijä:** Stemmi
+
+Näyttää Suomen koulujen sijainnit kartalla Tilastokeskuksen INSPIRE OGC API:n tiedoista. Skripti tukee koulutyyppien suodatusta (peruskoulut, lukiot, erityiskoulut, ammatilliset oppilaitokset, ammattikorkeakoulut, yliopistot), näyttää koulujen nimet sekä piirtää säädettävän kokoiset koulualueet ympyröinä. Sisältää kelluvan paneelin asetusten hallintaan ja 24 tunnin välimuistin.
+
+**Tiedosto:** [`scripts/WME_Koulualueet.js`](scripts/WME_Koulualueet.js)
+
+---
+
 ### Koordinaattietsin
 **Tekijä:** Stemmi
 
