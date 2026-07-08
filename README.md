@@ -28,7 +28,7 @@ Tuo Suomen Väyläviraston viralliset WMS-karttatasot WME:hen. Sisältää yli 1
 ---
 
 ### WME Recent Edits Extractor
-**Versio:** 0.2.0 | **Tekijä:** Stemmi
+**Versio:** 0.3.0 | **Tekijä:** Stemmi
 
 Poimii sijaintitiedot Wazen "Recent Edits" -sivulta ja mahdollistaa niiden viemisen GeoJSON-, KML- tai GPX-muodossa. Tarjoaa säädettävät latausstrategiat ja koordinaattijärjestelmävaihtoehdot.
 
