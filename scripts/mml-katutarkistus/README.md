@@ -166,6 +166,9 @@ Tämän ansiosta samaa katua ei tarvitse kysyä MML:ltä uudestaan jokaisella pa
 ## Screenshots
 ![MML API tarkistus](MML-Api-tarkistus.png)
 
+Kun segmentin huomiomerkkiä klikataan, saman nimiset segmentit tulee valituksi ja tien päällä näytetään pop-up ruutu
+![MML API tarkistus](segmentin-valinta.png)
+
 
 ## Versiohistoria
 
