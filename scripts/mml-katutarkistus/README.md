@@ -164,7 +164,7 @@ Tämän ansiosta samaa katua ei tarvitse kysyä MML:ltä uudestaan jokaisella pa
 ---
 
 ## Screenshots
-![MML Api tarkistus.png](MML%20Lisäosa tarkistaa näkyvän karttanäkymän kadut MML:n tieosoiteaineistosta.
+MML%20API%20tarkistus.png
 
 
 ## Versiohistoria
