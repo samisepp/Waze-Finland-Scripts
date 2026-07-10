@@ -164,7 +164,7 @@ Tämän ansiosta samaa katua ei tarvitse kysyä MML:ltä uudestaan jokaisella pa
 ---
 
 ## Screenshots
-MML%20API%20tarkistus.png
+![MML API tarkistus](MML-Api-tarkistus.png)
 
 
 ## Versiohistoria
