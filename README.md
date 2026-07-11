@@ -80,6 +80,16 @@ Vertaa näkyvien tie- ja katusegmenttien nimiä Maanmittauslaitoksen (MML) geoko
 **Tiedosto:** [`scripts/mml-katutarkistus/WME MML-katutarkistus.js`](scripts/mml-katutarkistus/WME%20MML-katutarkistus.js)
 **Ohjeet:** [scripts/mml-katutarkistus/README.md](scripts/mml-katutarkistus/README.md)
 
+---
+
+### WME RPP Visualizer
+**Versio:** 1.1.0 | **Tekijä:** [RucaDestiny(maeklund86)](https://github.com/maeklund86)
+
+Näyttää katunumerot, sisäänkäyntipisteet ja yhdysviivat Residential Point Placeille (RPP) WME-kartalla.
+
+**Greasy fork**: https://greasyfork.org/en/scripts/586509-wme-rpp-visualizer
+**GitHub:** https://github.com/maeklund86/wme_rpp_visualizer
+
 ## Asennus
 
 Skriptien käyttö vaatii käyttäjäskriptilaajennuksen. Yksityiskohtaiset asennusohjeet löytyvät dokumentaatiosta:
