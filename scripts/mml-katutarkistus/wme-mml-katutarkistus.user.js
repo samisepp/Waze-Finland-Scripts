@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WME MML-katutarkistus
 // @namespace    wme-mml-tarkistus
-// @version      0.6.0
+// @version      0.6.1
 // @description  Tarkistaa WME-näkymän katunimet MML:n geokoodausrajapinnasta ja korostaa segmentit, joiden katua ei löydy virallisesta kartta-aineistosta.
 // @author       Sam
 // @match        https://www.waze.com/*editor*
@@ -13,6 +13,7 @@
 // @grant        GM_xmlhttpRequest
 // @grant        GM_getValue
 // @grant        GM_setValue
+// @grant        GM_info
 // @connect      avoin-paikkatieto.maanmittauslaitos.fi
 // @connect      aineistopalaute.maanmittauslaitos.fi
 // @run-at       document-end
@@ -42,10 +43,13 @@
  * https://www.maanmittauslaitos.fi/avoindata-lisenssi-cc40
  *
  * Huom: "ei löydy MML:stä" on vihje, ei tuomio - yksityistiet ja uudet kadut
- * voivat puuttua virallisesta aineistosta vaikka Waze-data on oikein.
+ * voivat puuttua virallisesta kartta-aineistosta vaikka Waze-data on oikein.
  * Ilmoita MML:lle vain havaintoja, jotka olet varmistanut.
  *
  * Versiohistoria:
+ *  0.6.1 - Yhtenäistys: versio luetaan headerista (GM_info), Ilmoita-napin
+ *          teksti sama kaikkialla, käyttöliittymän sanamuodot yhtenäistetty
+ *          (kartta-aineisto), kuvauskentän ohjeteksti, vanhentuneet kommentit.
  *  0.6.0 - MML-palaute: "Ilmoita MML:lle" avaa esitäytetyn palautelomakkeen
  *          listariviltä ja markerin popupista, lähetys Aineistopalaute-
  *          rajapintaan (XML, HTTP POST, EPSG:3067; testitila oletuksena,
@@ -79,7 +83,10 @@
   'use strict';
 
   const SCRIPT_NAME = 'MML-katutarkistus';
-  const SCRIPT_VERSION = '0.6.0';
+  // Versio luetaan headerin @version-rivistä (GM_info), jotta numero
+  // ylläpidetään vain yhdessä paikassa. Varakeino jos GM_info ei saatavilla.
+  const SCRIPT_VERSION = (typeof GM_info !== 'undefined' && GM_info.script && GM_info.script.version)
+    ? GM_info.script.version : '0.6.0';
   const CLIENT_ID = `WME-MML-katutarkistus/${SCRIPT_VERSION} (Tampermonkey userscript; Waze Map Editor)`;
   const MML_BASE = 'https://avoin-paikkatieto.maanmittauslaitos.fi/geocoding/v2/pelias/search';
   const CACHE_KEY = 'mml_katu_cache_v1';
@@ -476,7 +483,7 @@
     kuvaus.rows = 8;
     kuvaus.style.resize = 'vertical';
     kuvaus.style.minHeight = '110px';
-    dlg.appendChild(palauteField('Kuvaus', kuvaus));
+    dlg.appendChild(palauteField('Kuvaus (Muokkaa sopivaksi)', kuvaus));
 
     const syy = palauteInput('input');
     syy.type = 'text';
@@ -554,7 +561,8 @@
     palauteEls = { kohde, kuvaus, syy, eInput, nInput, email, phone, testCheck, sendBtn, status };
   }
 
-  // Esitäyttö tarkistustuloksesta: problem = { streetName, cityName, kind, segs }
+  // Esitäyttö tarkistustuloksesta.
+  // problem = { streetName, cityName, kind: 'notfound'|'error', segs: [...] }
   function openPalauteDialog(problem) {
     if (!palauteDialog) createPalauteDialog();
     const els = palauteEls;
@@ -951,7 +959,7 @@
 
       // Piirrä ja listaa
       const colors = { notfound: '#e53935', error: '#9e9e9e' };
-      const labels = { notfound: 'Ei löydy MML:stä', error: 'Kyselyvirhe' };
+      const labels = { notfound: 'Ei löydy MML:n kartta-aineistosta', error: 'Kyselyvirhe' };
       for (const p of problems) {
         const infoHtml = `<b>${p.streetName}</b> (${p.cityName})<br>${labels[p.kind]}`
           + (p.segs.length > 1 ? `<br><span style="color:#777;">${p.segs.length} segmenttiä</span>` : '');
@@ -978,7 +986,7 @@
           if (p.kind !== 'error') {
             const reportBtn = document.createElement('button');
             reportBtn.type = 'button';
-            reportBtn.textContent = 'Ilmoita';
+            reportBtn.textContent = 'Ilmoita MML:lle';
             reportBtn.title = 'Ilmoita havainto Maanmittauslaitokselle (avaa esitäytetyn palautelomakkeen)';
             reportBtn.style.cssText =
               'flex:none;padding:2px 7px;font:11px sans-serif;border:1px solid #999;'
