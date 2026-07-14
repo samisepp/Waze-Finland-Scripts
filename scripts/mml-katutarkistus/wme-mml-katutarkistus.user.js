@@ -7,8 +7,8 @@
 // @match        https://www.waze.com/*editor*
 // @match        https://beta.waze.com/*editor*
 // @exclude      https://www.waze.com/user/editor*
-// @updateURL    https://raw.githubusercontent.com/samisepp/Waze-Finland-Scripts/main/scripts/mml-katutarkistus/wme-mml-katutarkistus.user.js
-// @downloadURL  https://raw.githubusercontent.com/samisepp/Waze-Finland-Scripts/main/scripts/mml-katutarkistus/wme-mml-katutarkistus.user.js
+// @updateURL    https://raw.githubusercontent.com/Metroseksuaali/Waze-Finland-Scripts/main/scripts/mml-katutarkistus/wme-mml-katutarkistus.user.js
+// @downloadURL  https://raw.githubusercontent.com/Metroseksuaali/Waze-Finland-Scripts/main/scripts/mml-katutarkistus/wme-mml-katutarkistus.user.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.9.2/proj4.js
 // @grant        GM_xmlhttpRequest
 // @grant        GM_getValue
