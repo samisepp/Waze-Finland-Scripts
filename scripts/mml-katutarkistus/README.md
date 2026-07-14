@@ -38,10 +38,6 @@ Lisäosa toimii seuraavasti:
 6. Tallentaa tuloksen välimuistiin.
 7. Korostaa segmentit, joiden yksikään nimi ei tuota osumaa.
 
-Kuntavertailussa hyväksytään sekä:
-
-- `kuntanimiFin`
-- `kuntanimiSwe`
 
 ---
 
@@ -169,9 +165,17 @@ Tämän ansiosta samaa katua ei tarvitse kysyä MML:ltä uudestaan jokaisella pa
 Kun segmentin huomiomerkkiä klikataan, saman nimiset segmentit tulee valituksi ja tien päällä näytetään pop-up ruutu
 ![MML API tarkistus](segmentin-valinta.png)
 
+![Maanmittauslaitoksen karttapalaute](karttapalaute.png)
+
+
+
 
 ## Versiohistoria
-
+### 0.6.0
+-  MML-palaute: "Ilmoita MML:lle" avaa esitäytetyn palautelomakkeen listariviltä ja markerin popupista, lähetys Aineistopalaute- rajapintaan (XML, HTTP POST, EPSG:3067; testitila oletuksena,yhteystiedot muistetaan). 
+ - Uusi salmiakkimarkkeri. 
+ - CC BY 4.0 -attribuutio paneeliin ja popupiin. 
+ - Vain Suomessa olevat tiet tarkistetaan
 ### 0.5.2
 
 - Markerit sijoitetaan segmentin todelliseen keskikohtaan viivaa pitkin.
