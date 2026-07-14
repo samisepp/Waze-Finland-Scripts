@@ -90,7 +90,7 @@ Aina ohitettavat:
 
 ### 1. Tarkista
 
-[About]([/Waze-Finland-Scripts/blob/main/docs/getting-started.md]
+[Aloitusopas](/Waze-Finland-Scripts/blob/main/docs/getting-started.md)
 
 ### 2. Luo MML API-avain
 
