@@ -22,6 +22,7 @@ Lisäosa auttaa löytämään katuja, joita ei löydy MML:n virallisesta tieosoi
   - valitsee kyseisen kadun segmentit WME:ssä
 - Valinnainen automaattinen tarkistus kartan liikkuessa.
 - Tietyyppikohtaiset asetukset.
+- Mahdollisuus raportoida havainto suoraan Maanmittauslaitokselle, mikäli epäilee virheen olevan Maanmittauslaitoksen aineistossa.
 
 ---
 
@@ -49,7 +50,6 @@ Kuntavertailussa hyväksytään sekä:
 | Väri | Merkitys |
 |--------|-----------|
 | 🔴 Punainen | Katua ei löydy MML:n tieosoiteaineistosta |
-| 🟠 Oranssi | Katu löytyy, mutta eri kunnasta |
 | ⚫ Harmaa | MML-kysely epäonnistui |
 
 Kartalle piirretään lisäksi huomiomerkki (`!`) segmentin todelliseen keskikohtaan.
@@ -66,7 +66,6 @@ Oletuksena tarkistetaan:
 - Seututie (Minor Highway)
 - Maastotie / hiekkatie
 - Yksityistie
-- Kiitotie
 - Pysäköintialueen tie
 - Kuja / kapea katu
 
@@ -77,6 +76,7 @@ Oletuksena pois käytöstä (oletusasetuksia voi muuttaa skriptin sisältä, ei 
 - Jalankulkuväylät
 - Kävelytiet
 - Polut
+- Kiitotiet
 
 Aina ohitettavat:
 
@@ -88,9 +88,9 @@ Aina ohitettavat:
 
 ## Asennus
 
-### 1. Asenna Tampermonkey
+### 1. Tarkista
 
-https://www.tampermonkey.net/
+[About]([/Waze-Finland-Scripts/blob/main/docs/getting-started.md]
 
 ### 2. Luo MML API-avain
 
