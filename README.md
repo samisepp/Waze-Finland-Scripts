@@ -46,11 +46,11 @@ Lisää WME:hen karttatasojen overlay-toiminnon, jossa mukana Google Maps, OpenS
 ---
 
 ### WME INSPIRE Maanmittauslaitos
-**Versio:** 1.0.1 | **Tekijä:** Stemmi
+**Versio:** 1.3.4 | **Tekijä:** Stemmi
 
-Tuo Maanmittauslaitoksen INSPIRE WMS-karttatasot WME:hen. Hakee automaattisesti saatavilla olevat tasot (Administrative Units, Geographical Names, Buildings) ja tarjoaa sivupalkki-integraation sekä kelluvan pika-aktivointipaneelin tasojen hallintaan.
+Tuo Maanmittauslaitoksen INSPIRE WMS-karttatasot WME:hen. Hakee automaattisesti saatavilla olevat tasot (Administrative Units, Geographical Names, Buildings) ja tarjoaa sivupalkki-integraation sekä kelluvan pika-aktivointipaneelin tasojen hallintaan. Lisätty rakennusten osoitetiedon vihjetyökalu.
 
-**Tiedosto:** [`scripts/WME_INSPIRE_Maanmittauslaitos_1.0.1.js`](scripts/WME_INSPIRE_Maanmittauslaitos_1.0.1.js)
+**Tiedosto:** [`scripts/WME_INSPIRE_Maanmittauslaitos_1.3.4.js`](scripts/WME_INSPIRE_Maanmittauslaitos_1.3.4.js)
 
 ---
 
@@ -75,9 +75,9 @@ HTML-työkalu, joka analysoi XLSM/XLSX-tiedostoja ja etsii niistä koordinaattej
 ### WME MML-katutarkistus
 **Versio:** 0.5.2 | **Tekijä:** [Sam (samisepp)](https://github.com/samisepp)
 
-Vertaa näkyvien tie- ja katusegmenttien nimiä Maanmittauslaitoksen (MML) geokoodausrajapinnan tieosoiteaineistoon ja korostaa segmentit, joiden katua ei löydy virallisesta aineistosta tai jotka näyttävät kuuluvan eri kuntaan. Auttaa löytämään esimerkiksi keksittyjä tai poistuneita tiennimiä. Vaatii MML:n API-avaimen. Sisältää välimuistin, rinnakkaiset kyselyt sekä valinnaisen automaattitarkistuksen kartan liikkuessa.
+Vertaa näkyvien tie- ja katusegmenttien nimiä Maanmittauslaitoksen (MML) geokoodausrajapinnan tieosoiteaineistoon ja korostaa segmentit, joiden katua ei löydy virallisesta aineistosta tai jotka näyttävät kuuluvan eri kuntaan. Auttaa löytämään esimerkiksi keksittyjä tai poistuneita tiennimiä. Vaatii MML:n API-avaimen. Sisältää välimuistin, rinnakkaiset kyselyt sekä valinnaisen automaattitarkistuksen kartan liikkuessa. Mahdollisuus lähettää karttapalaute Maanmittauslaitokselle mikäli epäilee tilannetta että virhe on Maanmittauslaitoksen aineistossa.
 
-**Tiedosto:** [`scripts/mml-katutarkistus/WME MML-katutarkistus.js`](scripts/mml-katutarkistus/WME%20MML-katutarkistus.js)
+**Tiedosto:** [`scripts/mml-katutarkistus/WME MML-katutarkistus.js`](scripts/mml-katutarkistus/wme-mml-katutarkistus.user.js)
 **Ohjeet:** [scripts/mml-katutarkistus/README.md](scripts/mml-katutarkistus/README.md)
 
 ---
@@ -118,3 +118,4 @@ Kiitos kaikille suomalaisen Waze-yhteisön vapaaehtoisille, jotka ovat jakaneet 
 
 - [Stemmi90](https://github.com/Stemmi90)
 - [samisepp](https://github.com/samisepp)
+- [RucaDestiny(maeklund86)](https://github.com/maeklund86)
