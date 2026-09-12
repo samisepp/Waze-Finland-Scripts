@@ -152,8 +152,9 @@ Skriptin omat viestit näkyvät konsolissa etuliitteellä `[Opasteet]`. Lisäosa
 
 ## Screenshots
 
-<!-- Lisää kuvakaappaukset tähän -->
+![Digitraffic nopeusrajoutukset](wme-nopeusrajoitukset.png)
 
+![Digitraffic vaihtuva tekstiopaste](wme-vaihtuva-tekstiopaste.png)
 ---
 
 ## Versiohistoria
