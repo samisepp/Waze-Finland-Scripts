@@ -80,6 +80,8 @@ Vertaa näkyvien tie- ja katusegmenttien nimiä Maanmittauslaitoksen (MML) geoko
 **Tiedosto:** [`scripts/mml-katutarkistus/WME MML-katutarkistus.js`](scripts/mml-katutarkistus/wme-mml-katutarkistus.user.js)
 **Ohjeet:** [scripts/mml-katutarkistus/README.md](scripts/mml-katutarkistus/README.md)
 
+---
+
 ### WME Digitraffic kelikamerat
 **Tekijä:** [Sam (samisepp)](https://github.com/samisepp)
 
@@ -87,6 +89,8 @@ Editorissa näytetään kelikameroiden sijainnit. Ikonia klikkaamalla saa kelika
 
 **Tiedosto:** [Skripti](scripts/digitraffic-kelikamerat/WME-digitraffic-kelikamerat.user.js)
 **Ohjeet:** [Readme](scripts/digitraffic-kelikamerat/README-kelikamerat.md)
+
+---
 
 ### WME Digitraffic muuttuvat nopeusrajoitukset ja muuttuvat varoituskyltit
 **Tekijä:** [Sam (samisepp)](https://github.com/samisepp)
