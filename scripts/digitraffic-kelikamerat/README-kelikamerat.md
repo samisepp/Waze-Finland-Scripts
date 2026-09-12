@@ -147,6 +147,7 @@ Skriptin omat viestit näkyvät konsolissa etuliitteellä `[Kelikamerat]`.
 
 ![WME Kelikamerat](wme-kelikamerat.png)
 
+![WME tasott](digitraffic-tasot.png)
 ---
 
 ## Versiohistoria
