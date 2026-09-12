@@ -145,7 +145,7 @@ Skriptin omat viestit näkyvät konsolissa etuliitteellä `[Kelikamerat]`.
 
 ## Screenshots
 
-<!-- Lisää kuvakaappaukset tähän -->
+![WME Kelikamerat](wme-kelikamerat.png)
 
 ---
 
