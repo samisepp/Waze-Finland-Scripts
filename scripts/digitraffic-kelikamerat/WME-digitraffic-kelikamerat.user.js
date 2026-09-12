@@ -8,6 +8,8 @@
 // @exclude      https://*.waze.com/user/editor*
 // @exclude      https://*.waze.com/editor/sdk/*
 // @grant        GM_xmlhttpRequest
+// @updateURL    https://raw.githubusercontent.com/Metroseksuaali/Waze-Finland-Scripts/main/scripts/digitraffic-kelikamerat/WME-digitraffic-kelikamerat.user.js
+// @downloadURL  https://raw.githubusercontent.com/Metroseksuaali/Waze-Finland-Scripts/main/scripts/digitraffic-kelikamerat/WME-digitraffic-kelikamerat.user.js
 // @connect      tie.digitraffic.fi
 // @connect      weathercam.digitraffic.fi
 // @run-at       document-idle
