@@ -47,7 +47,36 @@
  * Ilmoita MML:lle vain havaintoja, jotka olet varmistanut.
  *
  * Versiohistoria:
- *  0.6.1 - Ensimmäinen julkaistu versio.
+ *  0.6.1 - Yhtenäistys: versio luetaan headerista (GM_info), Ilmoita-napin
+ *          teksti sama kaikkialla, käyttöliittymän sanamuodot yhtenäistetty
+ *          (kartta-aineisto), kuvauskentän ohjeteksti, vanhentuneet kommentit.
+ *  0.6.0 - MML-palaute: "Ilmoita MML:lle" avaa esitäytetyn palautelomakkeen
+ *          listariviltä ja markerin popupista, lähetys Aineistopalaute-
+ *          rajapintaan (XML, HTTP POST, EPSG:3067; testitila oletuksena,
+ *          yhteystiedot muistetaan). Koordinaattimuunnos proj4js:llä
+ *          (varakaava jos ei lataudu), täydet metrit. Oma salmiakkimarkeri
+ *          erottumaan muista lisäosista. CC BY 4.0 -attribuutio paneeliin ja
+ *          popupiin. Vain Suomessa olevat tiet tarkistetaan (kaupungin
+ *          countryID). "Eri kunnassa" -tila poistettu - katunimen täsmäys
+ *          riittää, tie voi olla toisen kunnan alueella.
+ *  0.5.2 - Marker segmentin todelliseen keskikohtaan viivaa pitkin, jotta se
+ *          ei osu nodeen (2 pisteen segmentillä osui aiemmin päätepisteeseen).
+ *  0.5.1 - Markerin klikkaus valitsee kadun segmentit WME:ssä popupin lisäksi.
+ *  0.5.0 - Rinnakkaisuus 10:een. Client-tunniste MML-kutsuihin (User-Agent /
+ *          X-Client). Markerin klikkaus avaa popupin, joka kertoo ongelman.
+ *          Käynnissä-indikaattori (spinner + eteneminen) karttanäkymään.
+ *  0.4.2 - Ympyrämarkeri (!) segmentin keskikohtaan korostuksen lisäksi.
+ *  0.4.1 - Vikalista näyttää uniikit kadut (yksi rivi per katu+kaupunki);
+ *          kaikki kadun segmentit korostetaan ja klikkaus kiertää ne läpi.
+ *  0.4.0 - Selkeämpi asetusvalikko (nappimainen avaus, nuoli, valintamäärä).
+ *          Valinnainen automaattitarkistus kartan liikkuessa (debounce +
+ *          zoomivartija). Nappi säilyy manuaalikäyttöön.
+ *  0.3.1 - Lautat (15) ja portaat (16) jätetään aina pois asetusten sijaan.
+ *  0.3.0 - Tietyyppiasetukset (on/off per tyyppi). Junaradat (18) aina pois.
+ *          Oletuksena pois: jalankulkuväylät, rampit, moottoritiet.
+ *  0.2.1 - Näkymäsuodatus: vain kartan rajauksen sisällä olevat segmentit.
+ *  0.2.0 - Napit type="button", kuntanimiSwe mukaan, rinnakkaiset kyselyt.
+ *  0.1.0 - Ensimmäinen versio.
  */
 
 (function () {
