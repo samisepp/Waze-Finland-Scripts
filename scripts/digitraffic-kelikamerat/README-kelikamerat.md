@@ -153,65 +153,7 @@ Skriptin omat viestit näkyvät konsolissa etuliitteellä `[Kelikamerat]`.
 
 ### 0.10.1
 
-- Korjattu tyylisäännöt toisensa poissulkeviksi; vikatilan harmaa ikoni näkyy nyt oikein.
-
-### 0.10.0
-
-- Toistopainike historiakuville.
-- Kehysten esilataus ja muistivälimuisti.
-
-### 0.9.3
-
-- Tieosoite ja tunnukset siirretty otsikon työkaluvihjeeseen; metarivi piilotettu.
-
-### 0.9.2
-
-- Otsikkona aseman virallinen nimi; tieosoite erotettu selvemmin nimestä.
-
-### 0.9.1
-
-- Liukusäädin avautuu oikeassa laidassa eli nykyhetkessä.
-
-### 0.9.0
-
-- Liukusäädin aina näkyvissä, historia ladataan laiskasti.
-- Erillinen historiatila poistettu.
-
-### 0.8.0
-
-- Viimeisen 24 tunnin kuvahistoria.
-- Vikatilan näyttäminen kartalla ja ikkunassa.
-- Kuvan automaattinen päivitys ETagilla.
-
-### 0.7.0
-
-- Kuvaussuuntaan liittyvä toiminnallisuus poistettu kokonaan.
-
-### 0.6.0
-
-- Suuntasektori seuraa valittua esiasentoa.
-
-### 0.5.0
-
-- Suunta piirretään geometriana ikonin sijaan; diagnostiikkatyökalut.
-
-### 0.4.0
-
-- Kuvaussuunnan päättely tieosoiteverkosta.
-
-### 0.3.0
-
-- Ikkuna siirrettäväksi ja kokoa voi muuttaa; asetukset säilyvät.
-
-### 0.2.0
-
-- Esiasentojen selkokieliset nimet.
-- Ikkuna avautuu kameran viereen.
-- Linkki Liikennetilanne-palveluun.
-
-### 0.1.0
-
-- Ensimmäinen julkaisu.
+- Ensimmäinen julkaisu
 
 ---
 
