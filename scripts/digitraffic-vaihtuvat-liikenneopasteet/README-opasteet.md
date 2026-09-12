@@ -161,49 +161,6 @@ Skriptin omat viestit näkyvät konsolissa etuliitteellä `[Opasteet]`. Lisäosa
 
 ### 0.6.0
 
-- Aikaikkunan valinta poistettu sivupaneelista.
-- Lämpötilaopasteiden rasti poistettu tasovalikosta; taulut näkyvät aina omalla ikonillaan.
-
-### 0.5.1
-
-- Korjattu käynnistyksen kaatanut vakioiden alustusjärjestys.
-
-### 0.5.0
-
-- Ajosuunta selkokielisenä ilmansuuntana.
-- Suuntasektori kartalle valitulle opasteelle.
-
-### 0.4.0
-
-- Muutoshistorian tiivistys: samanarvoiset rivit yhdistetään ja hetkelliset tilat karsitaan.
-- Tekstirivien kenttänä `rows`; `cause` mukaan.
-
-### 0.3.0
-
-- Viiden viimeisimmän muutoksen haku laitteen historiasta.
-
-### 0.2.1
-
-- Lämpötilatunnistus kattaa ruotsin- ja englanninkieliset muodot.
-
-### 0.2.0
-
-- Lämpötilataulujen tunnistus ja oma ikoni.
-
-### 0.1.3
-
-- Tekstirivit luetaan objekteista; pimeät opasteet saavat tyyppikohtaisen harmaan ikonin.
-
-### 0.1.2
-
-- Pimeyden päättely tyypeittäin; raakadata saatavilla konsolista.
-
-### 0.1.1
-
-- Korjattu tyylisäännöt toisensa poissulkeviksi; nopeusarvot näkyvät ikoneissa.
-
-### 0.1.0
-
 - Ensimmäinen julkaisu.
 
 ---
