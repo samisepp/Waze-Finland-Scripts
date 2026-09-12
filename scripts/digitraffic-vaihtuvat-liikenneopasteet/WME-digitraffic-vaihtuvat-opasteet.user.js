@@ -11,6 +11,8 @@
 // @connect      tie.digitraffic.fi
 // @connect      avoinapi.vaylapilvi.fi
 // @run-at       document-idle
+// @updateURL    https://raw.githubusercontent.com/Metroseksuaali/Waze-Finland-Scripts/main/scripts/digitraffic-vaihtuvat-liikenneopasteet/WME-digitraffic-vaihtuvat-opasteet.user.js
+// @downloadURL  https://raw.githubusercontent.com/Metroseksuaali/Waze-Finland-Scripts/main/scripts/digitraffic-vaihtuvat-liikenneopasteet/WME-digitraffic-vaihtuvat-opasteet.user.js
 // ==/UserScript==
 
 /* Data: Fintraffic / Digitraffic ja Väylävirasto, lisenssi CC BY 4.0 */
